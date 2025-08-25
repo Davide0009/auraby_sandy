@@ -79,6 +79,7 @@
             font-weight: 600;
             transition: 0.3s;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 1);
+             bottom:5rem;
         }
         .btn:hover {
             background: linear-gradient(135deg, #E8C547, #FFD700, #BFA055);
@@ -286,4 +287,5 @@
                 margin-top: 10px;
                 color: white;
                 
+
  }
