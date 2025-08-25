@@ -1,4 +1,4 @@
-        /* Basic body and text setup */
+        /* Basic body and text setup */        /* Basic body and text setup */
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -73,13 +73,12 @@
             color: #0d0d0d;
             background: linear-gradient(135deg, #FFD700, #E8C547, #BFA055);
             position: absolute;
-            bottom: 8em;
+            bottom: 5rem;
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
             transition: 0.3s;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 1);
-             bottom:5rem;
         }
         .btn:hover {
             background: linear-gradient(135deg, #E8C547, #FFD700, #BFA055);
@@ -223,7 +222,7 @@
         }
         
         
-        #contact-section button{
+        #contact-section button {
             display: inline-block;
             padding: 12px 24px;
             font-size: 1.2rem;
@@ -235,7 +234,6 @@
             font-weight: 600;
             transition: 0.3s;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 1);
-            botto
         }
         
         #contact-section button:hover{
@@ -289,3 +287,103 @@
                 
 
  }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                font-size: 1rem; /* Adjust font size for smaller screens */
+                gap: 15px;
+                padding: 10px 0;
+            }
+            .hero h1 {
+                font-size: 3rem; /* Adjust hero title size */
+            }
+            .hero p {
+                font-size: 1.2rem; /* Adjust hero paragraph size */
+            }
+            .btn {
+                padding: 10px 20px; /* Adjust button size */
+                font-size: 1rem;
+            }
+            #about h2 {
+                font-size: 2.5rem; /* Adjust about section title size */
+            }
+            
+            /* Gallery adjustments for tablets */
+            .gallery-track img {
+                width: 150px;
+                height: 160px;
+                margin: 0 8px;
+            }
+            
+            /* Form adjustments */
+            #contact-section form {
+                max-width: 90%;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                font-size: 0.9rem; /* Further adjust font size for mobile */
+                gap: 10px;
+            }
+            .hero h1 {
+                font-size: 2.5rem; /* Further adjust hero title size */
+            }
+            .hero p {
+                font-size: 1rem; /* Further adjust hero paragraph size */
+            }
+            .btn {
+                padding: 8px 16px; /* Further adjust button size */
+                font-size: 0.9rem;
+            }
+            #about h2 {
+                font-size: 2rem; /* Further adjust about section title size */
+            }
+            
+            /* Gallery adjustments for mobile */
+            .gallery-track img {
+                width: 120px;
+                height: 130px;
+                margin: 0 5px;
+            }
+            
+            .gallery-btns {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .gallery-btn-left,
+            .gallery-btn-right {
+                position: static;
+                margin: 5px 0;
+            }
+            
+            /* Testimonial cards */
+            .testimonial-card {
+                padding: 15px;
+                margin: 8px 5px;
+            }
+            
+            /* Footer adjustments */
+            footer ul li {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            /* Form adjustments */
+            #contact-section input, 
+            #contact-section textarea {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            
+            #contact-section button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+
